@@ -1,2 +1,16 @@
 @charset "UTF-8";
 
+html {
+  font-size: 100%;
+}
+
+body {
+  color: #333;
+  font-size: 1rem;
+  font-family: 'Raleway', sans-serif;
+}
+
+img {
+  text-align: center;
+}
+
