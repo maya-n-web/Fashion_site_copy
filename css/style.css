@@ -1,9 +1,9 @@
 @charset "UTF-8";
 
 /* 共通 */
-  html {
+html {
   font-size: 62.5%;
-  box-sizing:border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -11,15 +11,18 @@ body {
   font-size: 1rem;
   font-style: normal;
   font-family: 'Raleway', sans-serif;
+
 }
 
 .wrapper {
- /* margin-left: 200px ;
-  margin-right:200px;
+  width: 100%;
   max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
   text-align: center;
-  /* display: flex; */
-  /* flex-direction:column;  */ */
+  display: flex;
+  flex-direction: column;
 }
 
 li {
@@ -31,17 +34,21 @@ a {
   color: #333333;
 }
 
+.font {
+  font-style: normal;
+  font-family: 'Raleway', sans-serif;
+}
 
 
 
 /* ヘッダー */
 
 header {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  justify-content :center;
+  margin-top: 30px;
+  justify-content: center;
 
 }
+
 .logo {
   width: 110px;
   height: auto;
@@ -52,27 +59,27 @@ header {
 
 .main-nav {
   width: 100%;
-  display : flex;
-  align-items:flex-end;
+  display: flex;
+  align-items: flex-end;
   justify-content: space-between;
-  border-bottom : 1px solid rgb(149, 145, 145);
+  border-bottom: 1px solid rgb(149, 145, 145);
   margin-bottom: 50px;
   font-size: 1rem;
   font-weight: 300;
 }
 
-.nav-menu{
-  display : flex;
+.nav-menu {
+  display: flex;
   line-height: 5;
   padding: 0 100px 0px 30px;
-  gap: 1rem;  
+  gap: 1rem;
 }
 
-.nav-right-menu{
-  display : flex;
+.nav-right-menu {
+  display: flex;
   line-height: 5;
   padding: 0 100px 0px;
-  gap: 15px;  
+  gap: 15px;
 }
 
 /* /* メイン  */
@@ -80,56 +87,116 @@ header {
 .main {
   display: flex;
   justify-content: center;
-  text-align :left;
-  margin-bottom: 0 ;
+  text-align: left;
+  margin-bottom: 0;
 }
 
 /* 写真*/
 .pic {
-  width: 400px ;
-  height: 500px;
-  
+  width: 40%;
+  margin-right: 30px;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 
 /* アイテムインフォ */
 
 .info {
-  width: 200px ;
-  margin: 30px 50px 0;
+  width: 40%;
+  padding: 0 20px;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.info-2 {
+  width: 100%;
+  max-width: 340px;
 }
 
 h1 {
-width: 340px;
-height: 60;
+  border-bottom: 1px solid grey;
+  border-top: 1px solid grey;
+  padding: 20px;
+  padding-left: 0;
+  text-align: left;
 
-border-bottom: 1px solid grey ;
-border-top: 1px solid grey ;
-padding: 20px;
-margin: 0 0 0 0;
 }
 
 
 .ex {
-  width: 340px;
-  height: 140px;
-  
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+.cart-button {
+  display: block;
+  padding: 18px 18px;
+  margin: 20px 0;
+  text-align: center;
+  height: auto;
+  box-sizing: border-box;
+  background-color: #3f3b3b;
+  color: #ffffff;
+  font-weight: 300;
 }
 
 
+/* テーブル */
+
+.size-table {
+  width: 100%;
+  max-width: 340px;
+  border-collapse: collapse;
+  text-align: center;
+}
 
 
+th,
+td {
+  padding: 5px 5px;
+  border-bottom: 1px solid #333;
+  border-right: 1px solid #333;
+}
 
 
+.last {
+  border-bottom: 0;
+}
+
+.last2 {
+  border-right: 0;
+}
+
+.wide-cell {
+  width: 200px;
+}
+
+.select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  color: #666;
+  border-radius: 0;
+  background-color: #fff;
+  appearance: none;
+}
+
+.size-table2 {
+  width: 100%;
+  max-width: 340px;
+  border-collapse: collapse;
+  text-align: center;
+}
 
 
+.size-table2 th,
+.size-table2 td {
+  padding: 5px 5px;
+  border: 1px solid #333;
+}
 
-
-
-
-
-
-
-
-
-
+.size-table2 th {
+  background-color: #f1eded;
+}
