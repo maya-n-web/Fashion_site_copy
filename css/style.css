@@ -35,17 +35,10 @@ a {
   color: #333333;
 }
 
-.font td,th {
-  font-weight: 300;
-}
-
-
-
 /* ヘッダー */
 
 header {
   margin-top: 30px;
-  justify-content: center;
   
 }
 
@@ -54,7 +47,7 @@ header {
   height: auto;
   margin-top: 10px;
   margin-bottom: 10px;
-  padding: 10px auto 10px;
+  padding: 10px 0 10px;
 }
 
 .main-nav {
@@ -82,7 +75,7 @@ header {
   gap: 15px;
 }
 
-/* /* メイン  */
+/* メイン  */
 
 .main {
   display: flex;
@@ -150,33 +143,34 @@ header {
 /* テーブル */
 
 .size-table {
-  box-sizing: border-box;
-  width: 100%;
-  max-width: 340px;
-  border-collapse: collapse;
-  text-align: center;
+box-sizing: border-box;
+width: 100%;
+max-width: 340px;
+border-collapse: collapse;
+text-align: center;
 }
 
 .wide-cell{
-  width: 60%;
+width: 60%;
 }
 
-th,
-td {
-  box-sizing: border-box;
-  width: 20%;
-  padding: 5px 5px;
-  border-bottom: 1px solid #c3c3c3;
-  border-right: 1px solid #c3c3c3;
+.size-table th,
+.size-table td{
+box-sizing: border-box;
+width: 20%;
+padding: 5px 5px;
+border-bottom: 1px solid #c3c3c3;
+border-right: 1px solid #c3c3c3;
+font-weight: 300;
 }
 
 
-.last {
-  border-bottom: 0;
+.size-table .last {
+border-bottom: 0;
 }
 
-.last2 {
-  border-right: 0;
+.size-table .last2 {
+border-right: 0;
 }
 
 select {
@@ -185,15 +179,13 @@ select {
   padding: 0.3rem;
   border: 1px solid #c3c3c3;
   color: #666;
-  border-radius: 5;
+  border-radius: 5px;
   background-color: #fff;
   cursor: pointer;  
   
   /* リセットcssで消えている矢印UIを復活させる */
-  appearance: menulist;
-  -moz-appearance: menulist;
-
-  
+  appearance: auto;
+  -moz-appearance: menulist;  
 }
 
 
@@ -210,16 +202,16 @@ select {
 
 .size-table2 th,
 .size-table2 td {
-  border: 1px solid #333;
-  padding: 1rem;
+border: 1px solid #333;
+padding: 1rem;
+font-weight: 300;
+
 }
 
 .size-table2 th {
   background-color: #f1eded;
   padding: 1rem;
 }
-
-
 
 /* フッター */
 .footer {
