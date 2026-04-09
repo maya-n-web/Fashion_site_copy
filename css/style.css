@@ -9,9 +9,10 @@ html {
 body {
   color: #333;
   font-size: 1rem;
+  font-weight: 300;
   font-style: normal;
   font-family: 'Raleway', sans-serif;
-
+  
 }
 
 .wrapper {
@@ -34,9 +35,8 @@ a {
   color: #333333;
 }
 
-.font {
-  font-style: normal;
-  font-family: 'Raleway', sans-serif;
+.font td,th {
+  font-weight: 300;
 }
 
 
@@ -46,7 +46,7 @@ a {
 header {
   margin-top: 30px;
   justify-content: center;
-
+  
 }
 
 .logo {
@@ -62,7 +62,7 @@ header {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  border-bottom: 1px solid rgb(149, 145, 145);
+  border-bottom: 1px solid #c3c3c3;
   margin-bottom: 50px;
   font-size: 1rem;
   font-weight: 300;
@@ -116,12 +116,13 @@ header {
   max-width: 340px;
 }
 
-h1 {
-  border-bottom: 1px solid grey;
-  border-top: 1px solid grey;
+.title {
+  border-bottom: 1px solid #c3c3c3;
+  border-top: 1px solid #c3c3c3;
   padding: 20px;
   padding-left: 0;
   text-align: left;
+  font-size: 1.5rem;
 
 }
 
@@ -129,6 +130,8 @@ h1 {
 .ex {
   padding-bottom: 30px;
   padding-top: 30px;
+  line-height: 1.6;
+  font-weight: 400;
 }
 
 .cart-button {
@@ -147,18 +150,24 @@ h1 {
 /* テーブル */
 
 .size-table {
+  box-sizing: border-box;
   width: 100%;
   max-width: 340px;
   border-collapse: collapse;
   text-align: center;
 }
 
+.wide-cell{
+  width: 60%;
+}
 
 th,
 td {
+  box-sizing: border-box;
+  width: 20%;
   padding: 5px 5px;
-  border-bottom: 1px solid #333;
-  border-right: 1px solid #333;
+  border-bottom: 1px solid #c3c3c3;
+  border-right: 1px solid #c3c3c3;
 }
 
 
@@ -170,33 +179,37 @@ td {
   border-right: 0;
 }
 
-.wide-cell {
-  width: 200px;
-}
-
-.select {
-  padding: 8px;
-  border: 1px solid #ccc;
-  color: #666;
-  border-radius: 0;
-  background-color: #fff;
-  appearance: none;
-}
-
-.size-table2 {
+select {
+  box-sizing: border-box;
   width: 100%;
-  max-width: 340px;
+  padding: 0.3rem;
+  border: 1px solid #c3c3c3;
+  color: #666;
+  border-radius: 5;
+  background-color: #fff;
+  cursor: pointer;  
+  
+}
+
+
+/* テーブル2個目 */
+.size-table2 {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 340px;                               
   border-collapse: collapse;
   text-align: center;
+  padding: 1rem;
 }
 
 
 .size-table2 th,
 .size-table2 td {
-  padding: 5px 5px;
   border: 1px solid #333;
+  padding: 1rem;
 }
 
 .size-table2 th {
   background-color: #f1eded;
+  padding: 1rem;
 }
