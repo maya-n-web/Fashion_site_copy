@@ -15,34 +15,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet">
 </head>
 
-
-
-
-
-<!-- コンテンツ幅
-全体の最大幅は1000pxで、コンテンツ部分の最大幅は800pxです。
-
-フォント
-Google Fonts の「Raleway」を使用します。
-
-数量とサイズの表について
-tableタグを使用してコーディングしてみましょう。
-
-レスポンシブ
-ブレークポイントは896pxです。
-スマホ時は、グローバルナビゲーションを横スクロールできるようにします。 -->
-
-
-
-
-
 <body>
   <div class="wrapper">
     <header id="header">
       <a href="index.html"><img class="logo" src="img/logo.svg" alt="TOTALLY" width="100" height="20"></a>
 
-      <nav class="main-nav">
-        <ul class="nav-menu">
+      <nav class="main_nav">
+        <ul class="nav_menu">
           <li><a class="item" href="#all.html">ALL</a></li>
           <li><a class="item" href="#new.html">NEW</a></li>
           <li><a class="item" href="#vin.html">VINTAGE</a></li>
@@ -51,21 +30,18 @@ tableタグを使用してコーディングしてみましょう。
           <li><a class="item" href="#blog.html">BLOG</a></li>
         </ul>
 
-
-        <ul class="nav-right-menu">
+        <ul class="nav_right_menu">
           <li><a class="item" href="#.html">LOGIN</a></li>
           <li><a class="item" href="#">CONTACT</a></li>
         </ul>
       </nav>
     </header>
 
-
-
     <main class="main">
       <img class="pic" src="img/item.jpg" alt="TOTALLYのロゴ入りの服を着た人" width="400" height="500">
 
       <div class="info">
-        <div class="info-2">
+        <div class="info_2">
           <h1 class="title">TOTALLY Short Sleeve Shirt</h1>
           <p class="info_text">テキストテキストテキスト
             テキストテキストテキストテキスト
@@ -79,7 +55,7 @@ tableタグを使用してコーディングしてみましょう。
 
           <p class="font">￥9,999 +tax</p><br>
 
-          <table class="size-table">
+          <table class="size_table">
             <thead>
               <tr>
                 <th>Color</th>
@@ -92,9 +68,9 @@ tableタグを使用してコーディングしてみましょう。
               <tr>
                 <td>White</td>
                 <td>S</td>
-                <td class="last2 wide-cell">
+                <td class="last2 wide_cell">
                   <label for="quantity1"></label>
-                  <select class="last-select" name="quantity1" id="quantity1">
+                  <select class="last_select" name="quantity1" id="quantity1">
                     <option value=" 1" selected="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -105,7 +81,7 @@ tableタグを使用してコーディングしてみましょう。
               <tr>
                 <td>White</td>
                 <td>M</td>
-                <td class="last2 wide-cell">
+                <td class="last2 wide_cell">
                   <label for="quantity2"></label>
                   <select name="quantity2" id="quantity2">
                     <option value=" 1" selected="1">1</option>
@@ -118,7 +94,7 @@ tableタグを使用してコーディングしてみましょう。
               <tr>
                 <td class="last">White</td>
                 <td class="last">L</td>
-                <td class="last last2 wide-cell">
+                <td class="last last2 wide_cell">
                   <label for="quantity3"></label>
                   <select name="quantity3" id="quantity3">
                     <option value="1" selected="1">1</option>
@@ -130,10 +106,9 @@ tableタグを使用してコーディングしてみましょう。
             </tbody>
           </table>
 
+          <a class="cart_button font" href="#header">ADD TO CART</a><br>
 
-          <a class="cart-button font" href="#header">ADD TO CART</a><br>
-
-          <table class="size-table2 font">
+          <table class="size_table2 font">
             <thead>
               <tr>
                 <th>Size</th>
@@ -168,9 +143,7 @@ tableタグを使用してコーディングしてみましょう。
           </table>
         </div>
       </div>
-
     </main>
-
 
     <footer class="footer">
       <p><small>&copy; TOTALLY</small></p>

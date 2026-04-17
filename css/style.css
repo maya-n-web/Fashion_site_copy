@@ -1,6 +1,5 @@
 @charset "UTF-8";
 
-
 /* 共通 */
 html {
   font-size: 62.5%;
@@ -14,9 +13,6 @@ body {
   font-family: 'Raleway', sans-serif;
   margin: 0 auto;
   box-sizing: border-box;
-
-
-
 }
 
 .wrapper {
@@ -38,10 +34,8 @@ a {
 }
 
 /* ヘッダー */
-
 header {
   margin-top: 30px;
-
 }
 
 .logo {
@@ -53,7 +47,7 @@ header {
   padding: 10px 0 10px;
 }
 
-.main-nav {
+.main_nav {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -63,29 +57,28 @@ header {
   font-weight: 300;
 }
 
-.nav-menu {
+.nav_menu {
   display: flex;
   line-height: 5;
   gap: 2rem;
   margin-left: 32px;
 }
 
-.nav-right-menu {
+.nav_right_menu {
   display: flex;
   line-height: 5;
   gap: 32px;
   margin-right: 32px;
 }
 
-/* メイン  */
-
+/* メイン */
 .main {
   display: flex;
   justify-content: center;
   margin-bottom: 0;
 }
 
-/* 写真*/
+/* 写真 */
 .pic {
   width: 40%;
   display: flex;
@@ -93,16 +86,14 @@ header {
   text-align: center;
 }
 
-
 /* アイテムインフォ */
-
 .info {
   width: 40%;
-  padding: 0 20px;
+  padding: 0 20px 0 50px;
   text-align: left;
 }
 
-.info-2 {
+.info_2 {
   width: 100%;
 }
 
@@ -113,9 +104,7 @@ header {
   padding-left: 0;
   text-align: left;
   font-size: 1.6rem;
-
 }
-
 
 .info_text {
   padding-bottom: 30px;
@@ -124,7 +113,7 @@ header {
   font-weight: 400;
 }
 
-.cart-button {
+.cart_button {
   display: block;
   padding: 18px 18px;
   margin: 30px 0;
@@ -136,22 +125,19 @@ header {
   cursor: pointer;
 }
 
-
 /* テーブル */
-
-.size-table {
+.size_table {
   width: 100%;
   border-collapse: collapse;
   text-align: center;
-
 }
 
-.wide-cell {
+.wide_cell {
   width: 60%;
 }
 
-.size-table th,
-.size-table td {
+.size_table th,
+.size_table td {
   width: 20%;
   padding: 5px 5px;
   border-bottom: 1px solid #c3c3c3;
@@ -159,12 +145,11 @@ header {
   font-weight: 300;
 }
 
-
-.size-table .last {
+.size_table .last {
   border-bottom: 0;
 }
 
-.size-table .last2 {
+.size_table .last2 {
   border-right: 0;
 }
 
@@ -176,31 +161,26 @@ select {
   border-radius: 5px;
   background-color: #fff;
   cursor: pointer;
-
-  /* リセットcssで消えている矢印UIを復活させる */
   appearance: auto;
   -moz-appearance: menulist;
 }
 
-
 /* テーブル2個目 */
-.size-table2 {
+.size_table2 {
   width: 100%;
   border-collapse: collapse;
   text-align: center;
   padding: 16px;
 }
 
-
-.size-table2 th,
-.size-table2 td {
+.size_table2 th,
+.size_table2 td {
   border: 1px solid #333;
   padding: 16px;
   font-weight: 300;
-
 }
 
-.size-table2 th {
+.size_table2 th {
   background-color: #f1eded;
   padding: 16px;
 }
@@ -212,20 +192,8 @@ select {
   font-size: 1.6rem;
 }
 
-
-
-
-
-
-
-
-
-
-
 /* スマホ用 */
-
 @media screen and (width <=869px) {
-
   .wrapper {
     display: flex;
     flex-direction: column;
@@ -236,11 +204,10 @@ select {
     height: auto;
   }
 
-  .main-nav {
+  .main_nav {
     text-align: center;
     margin: 0px;
   }
-
 
   .main {
     display: flex;
@@ -250,14 +217,12 @@ select {
     align-items: center;
   }
 
-
-  .nav-right-menu {
+  .nav_right_menu {
     display: none;
   }
 
   .title {
     margin: 20px 0 0 0;
-
   }
 
   .pic {
@@ -269,7 +234,4 @@ select {
     width: 100%;
     height: auto;
   }
-
-
-
 }
