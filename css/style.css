@@ -1,30 +1,28 @@
 @charset "UTF-8";
 
-  
+
 /* 共通 */
 html {
   font-size: 62.5%;
-  box-sizing: border-box;
 }
 
 body {
   color: #333;
-  font-size: 1rem;
+  font-size: 1.6em;
   font-weight: 300;
   font-style: normal;
   font-family: 'Raleway', sans-serif;
   margin: 0 auto;
   box-sizing: border-box;
 
-  
-  
+
+
 }
 
 .wrapper {
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
-  box-sizing: border-box;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -43,7 +41,7 @@ a {
 
 header {
   margin-top: 30px;
-  
+
 }
 
 .logo {
@@ -69,14 +67,14 @@ header {
   display: flex;
   line-height: 5;
   gap: 2rem;
-  margin-left:3rem  ;
+  margin-left: 32px;
 }
 
 .nav-right-menu {
   display: flex;
   line-height: 5;
-  gap: 2rem;
-  margin-right:3rem ;
+  gap: 32px;
+  margin-right: 32px;
 }
 
 /* メイン  */
@@ -90,12 +88,9 @@ header {
 /* 写真*/
 .pic {
   width: 40%;
-  height: auto;
-  box-sizing: border-box;
-  text-align: center;
   display: flex;
   flex-direction: column;
-  gap :30px;
+  text-align: center;
 }
 
 
@@ -104,13 +99,11 @@ header {
 .info {
   width: 40%;
   padding: 0 20px;
-  box-sizing: border-box;
   text-align: left;
 }
 
 .info-2 {
   width: 100%;
-  max-width: 340px;
 }
 
 .title {
@@ -119,12 +112,12 @@ header {
   padding: 20px;
   padding-left: 0;
   text-align: left;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 
 }
 
 
-.ex {
+.info_text {
   padding-bottom: 30px;
   padding-top: 30px;
   line-height: 1.6;
@@ -134,141 +127,149 @@ header {
 .cart-button {
   display: block;
   padding: 18px 18px;
-  margin: 20px 0;
+  margin: 30px 0;
   text-align: center;
   height: auto;
-  box-sizing: border-box;
   background-color: #3f3b3b;
   color: #ffffff;
   font-weight: 300;
+  cursor: pointer;
 }
 
 
 /* テーブル */
 
 .size-table {
-box-sizing: border-box;
-width: 100%;
-max-width: 340px;
-border-collapse: collapse;
-text-align: center;
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+
 }
 
-.wide-cell{
-width: 60%;
+.wide-cell {
+  width: 60%;
 }
 
 .size-table th,
-.size-table td{
-box-sizing: border-box;
-width: 20%;
-padding: 5px 5px;
-border-bottom: 1px solid #c3c3c3;
-border-right: 1px solid #c3c3c3;
-font-weight: 300;
+.size-table td {
+  width: 20%;
+  padding: 5px 5px;
+  border-bottom: 1px solid #c3c3c3;
+  border-right: 1px solid #c3c3c3;
+  font-weight: 300;
 }
 
 
 .size-table .last {
-border-bottom: 0;
+  border-bottom: 0;
 }
 
 .size-table .last2 {
-border-right: 0;
+  border-right: 0;
 }
 
 select {
-  box-sizing: border-box;
   width: 100%;
-  padding: 0.3rem;
+  padding: 3px;
   border: 1px solid #c3c3c3;
   color: #666;
   border-radius: 5px;
   background-color: #fff;
-  cursor: pointer;  
-  
+  cursor: pointer;
+
   /* リセットcssで消えている矢印UIを復活させる */
   appearance: auto;
-  -moz-appearance: menulist;  
+  -moz-appearance: menulist;
 }
 
 
 /* テーブル2個目 */
 .size-table2 {
-  box-sizing: border-box;
   width: 100%;
-  max-width: 340px;                               
   border-collapse: collapse;
   text-align: center;
-  padding: 1rem;
+  padding: 16px;
 }
 
 
 .size-table2 th,
 .size-table2 td {
-border: 1px solid #333;
-padding: 1rem;
-font-weight: 300;
+  border: 1px solid #333;
+  padding: 16px;
+  font-weight: 300;
 
 }
 
 .size-table2 th {
   background-color: #f1eded;
-  padding: 1rem;
+  padding: 16px;
 }
 
 /* フッター */
 .footer {
   text-align: center;
   margin-top: 100px;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
+
+
+
+
+
+
+
+
+
+
 
 /* スマホ用 */
-@media(max-width:869px) {
 
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  padding: 10px;
-  margin: 0 auto;
-  height: auto;
-}
-.main-nav {
-  text-align: center;
-  margin: 0px;
-}
+@media screen and (width <=869px) {
 
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    margin: 0 auto;
+    height: auto;
+  }
 
-.main {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  margin: 0 auto;
-  align-items: center;
-}
+  .main-nav {
+    text-align: center;
+    margin: 0px;
+  }
 
 
-.nav-right-menu {
-  display: none;
-}
+  .main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+  }
 
-.title {
-  margin: 20px 0 0 0;
 
-}
-.pic {
-  width: 100%;
-  height: auto;
-}
+  .nav-right-menu {
+    display: none;
+  }
 
-.info {
-  width: 100%;
-  height: auto;
- }
+  .title {
+    margin: 20px 0 0 0;
 
- 
+  }
+
+  .pic {
+    width: 100%;
+    height: auto;
+  }
+
+  .info {
+    width: 100%;
+    height: auto;
+  }
+
+
 
 }
