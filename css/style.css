@@ -87,7 +87,7 @@ header {
 
 /* 商品画像エリア */
 .pic {
-  width: 40%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   text-align: center;
